@@ -7,7 +7,8 @@ int main(int argc, char* argv[]){
         srand(time(NULL));
         int numRow=atoi(argv[1]);
         int numCol=atoi(argv[2]);
-        FILE * fp;fp=fopen(argv[3],"w");
+        FILE * fp;
+        fp=fopen(argv[3],"w");
         fprintf(fp,"rows(%d) cols(%d)\n",numRow,numCol);
         int i,j;
         for(i=0;i<numRow;i++){
